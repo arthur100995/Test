@@ -1,0 +1,1 @@
+from test_for_function_and_getting_help import *
