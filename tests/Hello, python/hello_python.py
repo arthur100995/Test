@@ -1,2 +1,3 @@
-from test_for_hello_python import *
-
+def favorite_color(c):
+    c = input()
+    return c
