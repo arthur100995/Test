@@ -1,39 +1,38 @@
-# def sign(x):
-#     if x > 0:
-#         return 1
-#     elif x < 0:
-#         return -1
-#     else:
-#         return 0
+import unittest
+import sys
+sys.path.append('/home/bear/PycharmProjects/Test/App/Booleans and Conditionals')
+from booleans_conditionals import *
 
-# def to_smash(total_candies):
-#     if total_candies == 1:
-#         print("Splitting", total_candies, "candy")
-#     else:
-#         print("Splitting", total_candies, "candies")
-#     return total_candies % 3
+class TestBooleansConditionals(unittest.TestCase):
 
-# def prepared_for_weather(have_umbrella, rain_level, have_hood, is_workday):
-#     return have_umbrella or (rain_level < 5 and have_hood) or (not (rain_level > 0 and is_workday))
+    def test_can_run_for_president(self):
+        self.assertTrue(can_run_for_president(35, True))
+        self.assertFalse(can_run_for_president(20, True))
+        self.assertFalse(can_run_for_president(17, True))
+        self.assertFalse(can_run_for_president(40, False))
 
-# def is_negative(number):
-#     return number < 0
+    def test_sign(self):
+        """Тесты для ф-ции sign"""
+        self.assertIs(sign(3), 1)
+        self.assertIsNot(sign(0), 1)
+        self.assertIs(sign(3.2156), 1)
+        self.assertIs(sign(-2), -1)
+        self.assertIsNot(sign(3), -1)
+        self.assertIs(sign(0), 0)
 
-
-# def exactly_one_sauce(ketchup, mustard, onion):
-#     return ketchup ^ mustard
-
-
-# def exactly_one_topping():
-#     return (ketchup + mustard + onion) == 1
-
-
-
+    def test_exactly_one_toping(self):
+        """Test for exactly_one_toping"""
+        self.assertTrue(exactly_one_toping(True, False, False))
+        self.assertTrue(exactly_one_toping(False, False, True))
+        self.assertTrue(exactly_one_toping(False, True, False))
+        self.assertFalse(exactly_one_toping(True, False, True))
+        self.assertFalse(exactly_one_toping(True, True, True))
 
 
 
 
-
+if __name__ == '__main__':
+    unittest.main()
 
     
 
