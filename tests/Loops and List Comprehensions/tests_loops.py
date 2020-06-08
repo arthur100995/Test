@@ -21,7 +21,12 @@ class LoopsTests(unittest.TestCase):
 
     def test_menu_is_boring(self):
         """Test for funnction 'menu_is_boring'"""
-        pass
+        self.assertIs(menu_is_boring(['meal', 'onion', 'meal', 'meal']), True)
+        self.assertIs(menu_is_boring([1, 2, 2]), True)
+
+    # def test_estimate__average_slot_payout(self):
+    #     self.assertEqual(estimate_average_slot_payout(), )
+
 
 
 
