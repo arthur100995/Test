@@ -5,9 +5,10 @@ def is_valid_zip(zip_code):
         return prom
     return False
 
-
-
-
-
-
-
+def word_search(doc_list, keyword):
+    """ Takes a list of documents (each document is a string) and a keyword.
+    Returns list of the index values into the original list for all documents
+    containing the keyword."""
+    for articles in doc_list:
+        if keyword.lower() in articles.lower():
+            return doc_list.index(articles)
