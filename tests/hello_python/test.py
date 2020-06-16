@@ -1,7 +1,6 @@
 import unittest
-import sys
-sys.path.append('/home/bear/PycharmProjects/Test/App/Hello, python')
-from hello import *
+from app.hello_python.hello import *
+
 
 class TestHello(unittest.TestCase):
     def test_add(self):
@@ -23,7 +22,7 @@ class TestHello(unittest.TestCase):
     def test_exchange_values(self):
         '''Тест для функции exchange_values'''
         self.assertEqual(exchange_values(1, 2), (2, 1))
-        self.assertEqual(exchange_values([1,2,3], [2,3,4]), ([2,3,4], [1,2,3]))
+        self.assertEqual(exchange_values([1, 2, 3], [2, 3, 4]), ([2, 3, 4], [1, 2, 3]))
 
     def test_candies_to_smash(self):
         '''Тест для функции candies_to_smash'''
