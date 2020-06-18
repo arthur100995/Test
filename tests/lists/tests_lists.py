@@ -1,6 +1,6 @@
 import unittest
 
-from App.Lists.lists import *
+from app.lists.lists import *
 
 
 class ListTests(unittest.TestCase):

@@ -1,7 +1,6 @@
 import unittest
 import sys
-sys.path.append('/home/bear/PycharmProjects/Test/App/Booleans and Conditionals')
-from booleans_conditionals import *
+from App.booleans_and_conditionals.booleans_conditionals import *
 
 class TestBooleansConditionals(unittest.TestCase):
 

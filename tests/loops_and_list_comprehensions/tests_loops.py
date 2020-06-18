@@ -1,5 +1,5 @@
 import unittest
-from App.Loops_and_List_Comprehensions.loops import *
+from app.loops_and_list_comprehensions.loops import *
 
 class LoopsTests(unittest.TestCase):
 

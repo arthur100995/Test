@@ -1,5 +1,5 @@
 import unittest
-from App.Strings_And_Dictionaries.string_dictionary import *
+from app.strings_and_dictionaries.string_dictionary import *
 
 
 class StrDictTest(unittest.TestCase):

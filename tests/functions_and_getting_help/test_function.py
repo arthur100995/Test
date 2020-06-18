@@ -1,7 +1,6 @@
 import unittest
 import sys
-sys.path.append('/home/bear/PycharmProjects/Test/App/Functions and Getting help')
-from function import *
+from App.functions_and_getting_help.function import *
 
 
 
